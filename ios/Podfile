@@ -1,0 +1,33 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'rnapp' do
+  pod 'AppCenterReactNativeShared', '~> 1.10.0'
+  pod 'AppCenter/Push', '~> 1.11.0'
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for rnapp
+
+  
+
+  platform :ios, '9.0'
+  target 'rnappTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'rnapp-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for rnapp-tvOS
+
+  target 'rnapp-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
