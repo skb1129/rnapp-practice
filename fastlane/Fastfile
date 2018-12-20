@@ -1,0 +1,21 @@
+fastlane_version '2.112.0'
+
+platform :android do
+    desc 'Build the Android application.'
+    lane :build do
+        gradle(task: 'clean', project_dir: 'android/')
+        gradle(task: 'assemble', build_type: 'Release', project_dir: 'android/')
+    end
+end
+
+platform :ios do
+    desc 'Fetch certificates and provisioning profiles'
+    private_lane :certificates do
+        match(app_identifier: 'com.dexter.rnapp', type: 'development', readonly: true)
+    end
+    desc 'Build the iOS application'
+    lane :build do
+        certificates
+        gym(scheme: 'rnapp', project: './ios/rnapp.xcodeproj')
+    end
+end
