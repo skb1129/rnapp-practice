@@ -8,6 +8,10 @@ import styles from './styles';
 
 @connect(state => ({ counter: state.counter }))
 class Counter extends PureComponent {
+  static navigationOptions = {
+    title: 'Counter',
+  };
+
   static propTypes = {
     dispatch: PropTypes.func.isRequired,
     counter: PropTypes.shape({

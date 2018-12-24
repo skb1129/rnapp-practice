@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-import Counter from './screens/counter/Counter';
+import AppNavigator from './screens/AppNavigator';
 
 class RNApp extends Component {
   render() {
-    return <Counter />;
+    return <AppNavigator />;
   }
 }
 
