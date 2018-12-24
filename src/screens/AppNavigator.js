@@ -1,5 +1,7 @@
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 
+import { COLORS } from '../config';
+
 import Counter from './counter/Counter';
 
 const AppNavigator = createStackNavigator({
@@ -8,7 +10,7 @@ const AppNavigator = createStackNavigator({
   initialRouteName: 'COUNTER',
   defaultNavigationOptions: {
     headerStyle: {
-      backgroundColor: '#51f41e',
+      backgroundColor: COLORS.primary,
     },
   },
 });

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-import { SafeAreaView } from 'react-navigation';
 import { PersistGate } from 'redux-persist/integration/react';
 
 import RNApp from './RNApp';
@@ -13,9 +12,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <PersistGate persistor={persistor}>
-          <SafeAreaView style={{ flex: 1 }} forceInset={{ top: 'never' }}>
-            <RNApp />
-          </SafeAreaView>
+          <RNApp />
         </PersistGate>
       </Provider>
     );
