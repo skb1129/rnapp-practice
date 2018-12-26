@@ -1,0 +1,4 @@
+target 'rnapp' do
+  # Pods for rnapp
+  pod 'Firebase/Core'
+end
