@@ -50,7 +50,7 @@ PODS:
   - nanopb/encode (0.3.901)
 
 DEPENDENCIES:
-  - Firebase/Core
+  - Firebase/Core (= 5.13.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -71,6 +71,6 @@ SPEC CHECKSUMS:
   GoogleUtilities: 95996bea7c7d9b8fb811b7507669a4a8762f80c7
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
-PODFILE CHECKSUM: 681ad9ad0e9a0186d336909b080ff48a68b8f51d
+PODFILE CHECKSUM: ec7cca2c5f6e7fc3ea28b093af5c391e26f74f0a
 
 COCOAPODS: 1.5.3
