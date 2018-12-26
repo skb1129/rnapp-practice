@@ -11,7 +11,7 @@ end
 platform :ios do
     desc 'Fetch certificates and provisioning profiles'
     private_lane :certificates do
-        match(app_identifier: 'com.dexter.rnapp', type: 'development', readonly: true)
+        match(app_identifier: 'dexter.rnapp', type: 'development', readonly: true)
     end
     desc 'Build the iOS application'
     lane :build do
