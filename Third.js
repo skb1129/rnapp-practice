@@ -1,12 +1,21 @@
 import React, {PureComponent,Suspense,lazy} from 'react';
 import {View} from 'react-native';
 
+import logModuleInfo from './logModuleInfo';
+
+logModuleInfo('Third.js file');
+
 const TheHugeModule = lazy(() => import('./TheHugeModule'))
 
 class Third extends PureComponent {
   static navigationOptions = {
     title: 'Third Screen'
   };
+
+  constructor(props) {
+    super(props);
+    logModuleInfo('Third Constructor');
+  }
 
   render() {
     const modules = require.getModules();

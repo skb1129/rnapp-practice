@@ -1,10 +1,19 @@
 import React, {PureComponent} from 'react';
 import {View,Button} from 'react-native';
 
+import logModuleInfo from './logModuleInfo';
+
+logModuleInfo('Second.js file');
+
 class Second extends PureComponent {
   static navigationOptions = {
     title: 'Second Screen'
   };
+
+  constructor(props) {
+    super(props);
+    logModuleInfo('Second Constructor');
+  }
 
   render() {
     return (

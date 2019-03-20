@@ -1,10 +1,19 @@
 import React, {PureComponent} from 'react';
 import {View,Button} from 'react-native';
 
+import logModuleInfo from './logModuleInfo';
+
+logModuleInfo('First.js file');
+
 class First extends PureComponent {
   static navigationOptions = {
     title: 'First Screen'
   };
+
+  constructor(props) {
+    super(props);
+    logModuleInfo('First Constructor');
+  }
 
   render() {
     return (
